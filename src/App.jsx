@@ -5,21 +5,25 @@ import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 
 function App(){
+
 return(
+
 <div>
 
-<Navbar/>
+<Navbar />
 
-<Hero/>
+<Hero />
 
-<Projects/>
+<Projects />
 
-<Experience/>
+<Experience />
 
-<Contact/>
+<Contact />
 
 </div>
+
 )
+
 }
 
 export default App

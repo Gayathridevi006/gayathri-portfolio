@@ -3,6 +3,7 @@ export default function Hero(){
 return(
 
 <section className="text-center py-20">
+<img src="/Profile.png" alt="Profile" width="200" />
 
 <h1 className="text-5xl font-bold text-blue-400">
 Gayathri Devi
