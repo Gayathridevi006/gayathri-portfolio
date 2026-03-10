@@ -2,36 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBAL */
+
 body{
-background:#0f172a;
-color:white;
-font-family:Arial;
+  background: radial-gradient(circle at top,#0f172a,#020617);
+  color:white;
+  font-family: 'Inter', Arial, sans-serif;
+  min-height:100vh;
 }
+
 html{
-scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
+
+/* ARCHITECTURE SECTION */
+
 .architecture-container{
-text-align:center;
-margin-top:40px;
+  text-align:center;
+  margin-top:60px;
 }
+
+/* Flow layout */
 
 .architecture-flow{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  margin-top:40px;
 }
+
+/* System boxes */
 
 .arch-box{
-background:#1f2a44;
-padding:16px 30px;
-border-radius:10px;
-font-weight:600;
-color:white;
-width:250px;
+  background:linear-gradient(145deg,#1f2937,#0f172a);
+  padding:18px 35px;
+  border-radius:12px;
+  font-weight:600;
+  color:white;
+  width:260px;
+  text-align:center;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.4);
+
+  transition:all 0.3s ease;
 }
 
+/* Hover effect */
+
+.arch-box:hover{
+  transform:translateY(-5px);
+  border:1px solid #6366f1;
+  box-shadow:
+  0 10px 30px rgba(99,102,241,0.4);
+}
+
+/* Arrows */
+
 .arrow{
-font-size:24px;
-color:#6fa3ff;
+  font-size:26px;
+  color:#6366f1;
+  animation:floatArrow 2s infinite ease-in-out;
+}
+
+/* Arrow animation */
+
+@keyframes floatArrow{
+  0%{ transform:translateY(0);}
+  50%{ transform:translateY(6px);}
+  100%{ transform:translateY(0);}
 }
