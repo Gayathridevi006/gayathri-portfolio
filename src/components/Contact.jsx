@@ -8,6 +8,10 @@ return(
 Contact
 </h2>
 
+<p className="text-gray-400">
+📍 Bangalore, India
+</p>
+
 <p className="mt-6">
 Email: ms.gayathridevi6@gmail.com
 </p>

@@ -5,14 +5,22 @@ export default function Navbar() {
 
       <div className="max-w-6xl mx-auto flex justify-between">
 
-        <h1 className="font-bold">
-          Gayathri Portfolio
-        </h1>
+     <div className="space-y-5">
 
+        {/* Greeting */}
+        <p className="text-indigo-400 text-lg font-medium tracking-wide">
+            👋 Hello, I'm Gayathri Devi, This is My Portfolio
+        </p>
+
+        </div>
         <div className="flex gap-8">
 
           <a href="#projects" className="hover:text-indigo-400">
             Projects
+          </a>
+
+          <a href="#skills" className="hover:text-indigo-400">
+            Skills
           </a>
 
           <a href="#experience" className="hover:text-indigo-400">

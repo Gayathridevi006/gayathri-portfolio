@@ -5,7 +5,7 @@ import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import Architecture from "./components/architecture"
 import Impact from "./components/impact"
-
+import Skills from "./components/Skills";
 function App(){
 
 return(
@@ -16,13 +16,15 @@ return(
 
 <Hero />
 
+<Experience />
+
+<Skills />
+
 <Projects />
 
 <Architecture />
 
 <Impact />
-
-<Experience />
 
 <Contact />
 

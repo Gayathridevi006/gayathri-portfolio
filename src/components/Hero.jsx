@@ -21,8 +21,13 @@ export default function Hero() {
         <div className="text-center md:text-left">
 
           <h1 className="text-5xl font-bold text-indigo-400">
-            Gayathri Devi
+            Gayathri Devi B
           </h1>
+
+
+          <p className="text-gray-400">
+            📍 Bangalore, India
+          </p>
 
           <p className="text-xl text-gray-400 mt-4">
             Python Backend Engineer | FastAPI | Django | AI Systems
