@@ -40,10 +40,11 @@ export default function Navbar() {
 
           <a
             href="/gayathri_cv.pdf"
-            className="bg-indigo-600 px-4 py-1 rounded hover:bg-indigo-700"
+            target="_blank"
+            className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition shadow-lg"
             >
-            Resume
-        </a>
+            📄 Resume
+            </a>
 
         </div>
 

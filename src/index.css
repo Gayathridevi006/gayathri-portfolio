@@ -22,6 +22,14 @@ section{
   margin-top:80px;
 }
 
+@layer components {
+
+.section-title{
+  @apply text-3xl font-bold text-center mb-12;
+}
+
+}
+
 /* CARD DESIGN */
 
 .card{
