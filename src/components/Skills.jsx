@@ -10,7 +10,7 @@ export default function Skills() {
 
         {/* Languages */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Languages
           </h3>
@@ -24,7 +24,7 @@ export default function Skills() {
 
         {/* Backend */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Backend
           </h3>
@@ -41,7 +41,7 @@ export default function Skills() {
 
         {/* Data Engineering */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Data Engineering
           </h3>
@@ -57,7 +57,7 @@ export default function Skills() {
 
         {/* Cloud & DevOps */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Cloud & DevOps
           </h3>
@@ -75,7 +75,7 @@ export default function Skills() {
 
         {/* Databases */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div cclassName="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Databases
           </h3>
@@ -91,7 +91,7 @@ export default function Skills() {
 
         {/* Tools */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Tools
           </h3>
@@ -108,7 +108,7 @@ export default function Skills() {
 
         {/* Concepts */}
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
             Concepts
           </h3>
