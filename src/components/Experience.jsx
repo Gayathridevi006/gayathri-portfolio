@@ -40,7 +40,7 @@ export default function Experience() {
           </h3>
 
           <p className="text-indigo-400 text-sm mt-1">
-            Dec 2023 – Oct 2024 | Bangalore
+            Dec 2022 – Oct 2024 | Bangalore
           </p>
 
           <ul className="text-gray-400 mt-4 space-y-2 list-disc list-inside">
