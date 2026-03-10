@@ -10,7 +10,7 @@ export default function Projects() {
 
         {/* TRACE Project */}
 
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+        <div class="project-box">
 
           <h3 className="text-xl font-semibold">
             TRACE – Technical Warranty Recommender
@@ -27,16 +27,28 @@ export default function Projects() {
             <li>Built ML pipeline to automate recommendation decisions</li>
           </ul>
 
-          <p className="text-indigo-400 mt-4 text-sm">
-            Tech: Python, Machine Learning, NLP, Data Analytics
-          </p>
+          <div className="flex gap-2 mt-4 text-sm">
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            Python
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            ML
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            NLP
+            </span>
+
+            </div>
 
         </div>
 
 
         {/* VetDeploy */}
 
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+        <div className="project-box">
 
           <h3 className="text-xl font-semibold">
             VetDeploy – Military to Corporate Job Mapper
@@ -54,16 +66,34 @@ export default function Projects() {
             <li>Containerized services with Docker</li>
           </ul>
 
-          <p className="text-indigo-400 mt-4 text-sm">
+          {/* <p className="text-indigo-400 mt-4 text-sm">
             Tech: FastAPI, React, MongoDB, Docker
-          </p>
+          </p> */}
+          <div className="flex gap-2 mt-4 text-sm">
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            FastAPI
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            React
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            MongoDB
+            </span>
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            Docker
+            </span>
+
+            </div>
 
         </div>
 
 
         {/* AI Sports Project */}
 
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+        <div className="project-box">
 
           <h3 className="text-xl font-semibold">
             AI-Powered Personalized Sports Content
@@ -89,8 +119,7 @@ export default function Projects() {
 
         {/* ETL Data Pipeline */}
 
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-105 transition">
-
+        <div className="project-box">
           <h3 className="text-xl font-semibold">
             Financial Early Warning ETL Pipeline
           </h3>

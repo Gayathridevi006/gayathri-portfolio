@@ -1,31 +1,32 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 flex justify-center">
+    <section id="contact" className="py-32 flex justify-center">
 
-      <div className="bg-slate-800 p-10 rounded-xl shadow-lg max-w-xl w-full text-center">
+      <div className="border border-indigo-500 rounded-xl p-10 max-w-xl w-full hover:shadow-indigo-500/30 hover:shadow-lg transition">
 
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-4xl font-bold text-center mb-10 text-indigo-400">
           Contact
         </h2>
 
-        <div className="space-y-4 text-gray-300">
+        <div className="space-y-6 text-gray-300">
 
-          <p>
-            📍 <span className="font-semibold">Location:</span> Bangalore, India
-          </p>
+          <div className="flex justify-between">
+            <span className="font-semibold">📍 Location</span>
+            <span>Bangalore, India</span>
+          </div>
 
-          <p>
-            📧 <span className="font-semibold">Email:</span>{" "}
+          <div className="flex justify-between">
+            <span className="font-semibold">📧 Email</span>
             <a
               href="mailto:ms.gayathridevi6@gmail.com"
               className="text-indigo-400 hover:underline"
             >
               ms.gayathridevi6@gmail.com
             </a>
-          </p>
+          </div>
 
-          <p>
-            💻 <span className="font-semibold">GitHub:</span>{" "}
+          <div className="flex justify-between">
+            <span className="font-semibold">💻 GitHub</span>
             <a
               href="https://github.com/Gayathridevi006"
               target="_blank"
@@ -33,10 +34,10 @@ export default function Contact() {
             >
               github.com/Gayathridevi006
             </a>
-          </p>
+          </div>
 
-          <p>
-            🔗 <span className="font-semibold">LinkedIn:</span>{" "}
+          <div className="flex justify-between">
+            <span className="font-semibold">🔗 LinkedIn</span>
             <a
               href="https://www.linkedin.com/in/gayathri-devi-b-260407220"
               target="_blank"
@@ -44,21 +45,18 @@ export default function Contact() {
             >
               linkedin.com/in/gayathri-devi-b
             </a>
-          </p>
+          </div>
 
         </div>
 
+        <div className="border-t border-indigo-500 my-8"></div>
 
-
-        <div className="border-t border-gray-1000 my-8"></div>
-
-        <p className="mt-8 text-gray-400">
+        <p className="text-center text-red-400 font-medium">
           Open to Backend / Data Engineering Roles 🚀
         </p>
 
-      </div>     
+      </div>
 
-    </section>   
-
+    </section>
   );
 }
