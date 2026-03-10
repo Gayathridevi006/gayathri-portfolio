@@ -110,9 +110,26 @@ export default function Projects() {
             <li>Connected frontend components with APIs</li>
           </ul>
 
-          <p className="text-indigo-400 mt-4 text-sm">
+          {/* <p className="text-indigo-400 mt-4 text-sm">
             Tech: GCP, JavaScript APIs, AI Models
-          </p>
+          </p> */}
+              <div className="flex gap-2 mt-4 text-sm">
+          <span className="bg-indigo-600 px-2 py-1 rounded">
+            GCP
+          </span>
+
+          <span className="bg-indigo-600 px-1 py-1 rounded">
+            JavaScript
+          </span>
+
+          <span className="bg-indigo-600 px-1 py-1 rounded">
+            AI Models
+          </span>
+
+        <span className="bg-indigo-600 px-1 py-1 rounded">
+            APIS
+          </span>
+            </div>
 
         </div>
 
@@ -135,10 +152,30 @@ export default function Projects() {
             <li>Generated alerts using Pandas data analysis</li>
           </ul>
 
-          <p className="text-indigo-400 mt-4 text-sm">
+          {/* <p className="text-indigo-400 mt-4 text-sm">
             Tech: Python, Celery, Redis, MongoDB, Pandas
-          </p>
+          </p> */}
+            <div className="flex gap-2 mt-4 text-sm">
+            <span className="bg-indigo-600 px-2 py-1 rounded">      
+            Python
+            </span>
 
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            Celery
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            Redis
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            MongoDB
+            </span>
+
+            <span className="bg-indigo-600 px-2 py-1 rounded">
+            Pandas
+            </span>
+            </div>
         </div>
 
       </div>
