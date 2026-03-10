@@ -38,6 +38,13 @@ export default function Navbar() {
             Contact
           </a>
 
+          <a
+            href="/gayathri_cv.pdf"
+            className="bg-indigo-600 px-4 py-1 rounded hover:bg-indigo-700"
+            >
+            Resume
+        </a>
+
         </div>
 
       </div>

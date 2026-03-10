@@ -38,22 +38,21 @@ export default function Skills() {
           </ul>
         </div>
 
-
-        {/* Data Engineering */}
+        {/* Databases */}
 
         <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Data Engineering
+            Databases
           </h3>
 
           <ul className="text-gray-400 space-y-2">
-            <li>Pandas</li>
-            <li>NumPy</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
             <li>Hadoop</li>
-            <li>ETL Pipelines</li>
+            <li>AWS Athena</li>
           </ul>
         </div>
-
 
         {/* Cloud & DevOps */}
 
@@ -72,21 +71,21 @@ export default function Skills() {
           </ul>
         </div>
 
+        {/* Data Engineering */}
 
-        {/* Databases */}
-
-        <div cclassName="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
           <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Databases
+            Data Engineering
           </h3>
 
           <ul className="text-gray-400 space-y-2">
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>AWS Athena</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Hadoop</li>
+            <li>ETL Pipelines</li>
           </ul>
         </div>
+
 
 
         {/* Tools */}
