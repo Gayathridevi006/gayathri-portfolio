@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
 
             <a
-              href="../assets/gayathri_cv.pdf"
+              href="/gayathri_cv.pdf"
               download
               className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg"
             >
