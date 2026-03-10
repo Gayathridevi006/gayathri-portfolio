@@ -1,29 +1,64 @@
-export default function Contact(){
+export default function Contact() {
+  return (
+    <section id="contact" className="py-20 flex justify-center">
 
-return(
+      <div className="bg-slate-800 p-10 rounded-xl shadow-lg max-w-xl w-full text-center">
 
-<section id="contact" className="text-center py-20">
+        <h2 className="text-3xl font-bold mb-8">
+          Contact
+        </h2>
 
-<h2 className="text-3xl text-blue-400">
-Contact
-</h2>
+        <div className="space-y-4 text-gray-300">
 
-<p className="text-gray-400">
-📍 Bangalore, India
-</p>
+          <p>
+            📍 <span className="font-semibold">Location:</span> Bangalore, India
+          </p>
 
-<p className="mt-6">
-Email: ms.gayathridevi6@gmail.com
-</p>
+          <p>
+            📧 <span className="font-semibold">Email:</span>{" "}
+            <a
+              href="mailto:ms.gayathridevi6@gmail.com"
+              className="text-indigo-400 hover:underline"
+            >
+              ms.gayathridevi6@gmail.com
+            </a>
+          </p>
 
-<p>GitHub: https://github.com/Gayathridevi006/</p>
+          <p>
+            💻 <span className="font-semibold">GitHub:</span>{" "}
+            <a
+              href="https://github.com/Gayathridevi006"
+              target="_blank"
+              className="text-indigo-400 hover:underline"
+            >
+              github.com/Gayathridevi006
+            </a>
+          </p>
 
-<p>LinkedIn:  https://www.linkedin.com/in/gayathri-devi-b-260407220</p>
+          <p>
+            🔗 <span className="font-semibold">LinkedIn:</span>{" "}
+            <a
+              href="https://www.linkedin.com/in/gayathri-devi-b-260407220"
+              target="_blank"
+              className="text-indigo-400 hover:underline"
+            >
+              linkedin.com/in/gayathri-devi-b
+            </a>
+          </p>
 
-<p className="mt-3 text-gray-400">
-Open to Backend / Data Engineering Roles
-</p>
-</section>
+        </div>
 
-)
+
+
+        <div className="border-t border-gray-1000 my-8"></div>
+
+        <p className="mt-8 text-gray-400">
+          Open to Backend / Data Engineering Roles 🚀
+        </p>
+
+      </div>     
+
+    </section>   
+
+  );
 }
