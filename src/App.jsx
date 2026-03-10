@@ -6,6 +6,7 @@ import Contact from "./components/Contact"
 import Architecture from "./components/architecture"
 import Impact from "./components/impact"
 import Skills from "./components/Skills";
+import Education from "./components/education";
 function App(){
 
 return(
@@ -19,6 +20,8 @@ return(
 <Experience />
 
 <Skills />
+
+<Education />
 
 <Projects />
 

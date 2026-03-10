@@ -26,6 +26,10 @@ export default function Navbar() {
             Experience
           </a>
 
+          <a href="#education" className="hover:text-indigo-400 transition">
+            Education
+          </a>
+
           <a href="#architecture" className="hover:text-indigo-400 transition">
             Architecture
           </a>
