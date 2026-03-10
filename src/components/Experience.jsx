@@ -2,7 +2,7 @@ export default function Experience(){
 
 return(
 
-<section className="py-20">
+<section id="experience" className="py-20">
 
 <h2 className="text-3xl text-blue-400 text-center">
 Experience
