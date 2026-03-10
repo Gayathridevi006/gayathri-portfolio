@@ -1,11 +1,12 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 flex justify-center">
+    <>
+    <section id="contact" className="py-50 flex justify-center">
 
       <div className="border border-indigo-500 rounded-xl p-10 max-w-xl w-full hover:shadow-indigo-500/30 hover:shadow-lg transition">
 
         <h2 className="text-4xl font-bold text-center mb-10 text-indigo-400">
-          Contact
+          Let's Connect! 🚀
         </h2>
 
         <div className="space-y-6 text-gray-300">
@@ -22,6 +23,16 @@ export default function Contact() {
               className="text-indigo-400 hover:underline"
             >
               ms.gayathridevi6@gmail.com
+            </a>
+          </div>
+
+          <div className="flex justify-between">
+            <span className="font-semibold">📞 Phone</span>
+            <a
+              href="tel:+919036524348"
+              className="text-indigo-400 hover:underline"
+            >
+              +91 9036524348
             </a>
           </div>
 
@@ -58,5 +69,19 @@ export default function Contact() {
       </div>
 
     </section>
+    {/* Footer */}
+
+      <div className="border-t border-slate-800 my-12">
+
+        <footer className="text-center">
+
+          <p className="text-gray-500 text-sm">
+            © {new Date().getFullYear()} Gayathri Devi. Built with React + Tailwind.
+          </p>
+
+        </footer>
+
+      </div>
+    </>
   );
 }
