@@ -1,41 +1,41 @@
 export default function Navbar() {
   return (
-    <section className="pt-5">
-    <nav className="py-6">
+    <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
 
-      <div className="max-w-6xl mx-auto flex justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-     <div className="space-y-5">
+        {/* Logo / Name */}
 
-        {/* Greeting */}
-        <p className="text-indigo-400 text-lg font-medium tracking-wide">
-            👋 Hello, I'm Gayathri Devi, This is My Portfolio
-        </p>
+        <h1 className="text-lg font-bold text-indigo-400">
+          👋 Hello, I'm Gayathri!
+        </h1>
 
-        </div>
-        <div className="flex gap-8">
+        {/* Navigation Links */}
 
-          <a href="#projects" className="hover:text-indigo-400">
+        <div className="flex gap-6 text-gray-300 text-sm">
+
+          <a href="#projects" className="hover:text-indigo-400 transition">
             Projects
           </a>
 
-          <a href="#skills" className="hover:text-indigo-400">
+          <a href="#skills" className="hover:text-indigo-400 transition">
             Skills
           </a>
 
-          <a href="#experience" className="hover:text-indigo-400">
+          <a href="#experience" className="hover:text-indigo-400 transition">
             Experience
           </a>
 
-          <a href="#contact" className="hover:text-indigo-400">
-            Contact
-          </a>
-          <a href="#architecture" className="hover:text-indigo-400">
+          <a href="#architecture" className="hover:text-indigo-400 transition">
             Architecture
           </a>
 
-          <a href="#impact" className="hover:text-indigo-400">
+          <a href="#impact" className="hover:text-indigo-400 transition">
             Impact
+          </a>
+
+          <a href="#contact" className="hover:text-indigo-400 transition">
+            Contact
           </a>
 
         </div>
@@ -43,6 +43,5 @@ export default function Navbar() {
       </div>
 
     </nav>
-    </section>
   );
 }
