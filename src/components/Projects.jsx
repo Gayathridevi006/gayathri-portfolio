@@ -50,45 +50,28 @@ export default function Projects() {
 
         <div className="project-box">
 
-          <h3 className="text-xl font-semibold">
-            VetDeploy – Military to Corporate Job Mapper
-          </h3>
+        <h3 className="text-xl font-semibold">
+          AI Resume Builder
+        </h3>
 
-          <p className="text-gray-400 mt-3">
-            Full-stack platform mapping military veterans’ skills to 
-            relevant corporate job roles.
-          </p>
+        <p className="text-gray-400 mt-3">
+          AI-powered system that generates ATS-optimized resumes by analyzing job descriptions.
+        </p>
 
-          <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
-            <li>Built REST APIs using FastAPI</li>
-            <li>Designed UI using React</li>
-            <li>Stored user and job data in MongoDB</li>
-            <li>Containerized services with Docker</li>
-          </ul>
+        <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
+          <li>Built ML model using TF-IDF and Logistic Regression</li>
+          <li>Developed backend APIs using FastAPI</li>
+          <li>Generated resumes dynamically using LaTeX</li>
+        </ul>
 
-          {/* <p className="text-indigo-400 mt-4 text-sm">
-            Tech: FastAPI, React, MongoDB, Docker
-          </p> */}
-          <div className="flex gap-2 mt-4 text-sm">
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            FastAPI
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            React
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            MongoDB
-            </span>
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            Docker
-            </span>
-
-            </div>
-
+        <div className="flex gap-2 mt-4 text-sm">
+          <span className="bg-indigo-600 px-2 py-1 rounded">Python</span>
+          <span className="bg-indigo-600 px-2 py-1 rounded">FastAPI</span>
+          <span className="bg-indigo-600 px-2 py-1 rounded">ML</span>
+          <span className="bg-indigo-600 px-2 py-1 rounded">NLP</span>
         </div>
+
+      </div>
 
 
         {/* AI Sports Project */}
