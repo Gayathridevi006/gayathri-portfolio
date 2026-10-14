@@ -1,127 +1,17 @@
+const groups = [
+  ["AI & retrieval", "RAG", "LLM APIs", "Embeddings", "BM25", "Prompt engineering", "Transformers", "TF-IDF", "scikit-learn"],
+  ["Backend & data", "Python", "FastAPI", "Django", "Flask", "REST APIs", "Celery", "Pandas", "NumPy"],
+  ["Frontend", "React", "TypeScript", "JavaScript", "Figma", "Playwright", "Selenium"],
+  ["Cloud & systems", "AWS", "AWS CDK", "ECS", "EC2", "S3", "Docker", "Nginx", "CI/CD", "Linux"],
+  ["Databases & messaging", "PostgreSQL", "pgvector", "MySQL", "MongoDB", "Redis", "RabbitMQ", "Hadoop"],
+  ["Engineering", "System design", "Microservices", "Data pipelines", "RBAC", "Distributed systems", "Git", "SQLAlchemy"],
+];
+
 export default function Skills() {
   return (
-    <section id="skills" className="py-20">
-
-      <h2 className="text-3xl font-bold text-center mb-12">
-        Technical Skills
-      </h2>
-
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
-
-        {/* Languages */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Languages
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-
-
-        {/* Backend */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Backend
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>FastAPI</li>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>REST APIs</li>
-            <li>Microservices</li>
-          </ul>
-        </div>
-
-        {/* Databases */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Databases
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Hadoop</li>
-            <li>AWS Athena</li>
-          </ul>
-        </div>
-
-        {/* Cloud & DevOps */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Cloud & DevOps
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>AWS EC2</li>
-            <li>AWS S3</li>
-            <li>AWS Lambda</li>
-            <li>Docker</li>
-            <li>Redis</li>
-            <li>RabbitMQ</li>
-          </ul>
-        </div>
-
-        {/* Data Engineering */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Data Engineering
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Hadoop</li>
-            <li>ETL Pipelines</li>
-          </ul>
-        </div>
-
-
-
-        {/* Tools */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Tools
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>Git</li>
-            <li>Bitbucket</li>
-            <li>Jira</li>
-            <li>Postman</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-
-
-        {/* Concepts */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-          <h3 className="text-lg font-semibold mb-4 text-indigo-400">
-            Concepts
-          </h3>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>Data Structures</li>
-            <li>Algorithms</li>
-            <li>RBAC</li>
-            <li>Distributed Systems</li>
-          </ul>
-        </div>
-
-      </div>
-
+    <section id="skills" className="section-wrap section-block">
+      <div className="section-heading"><p className="eyebrow">TOOLS I WORK WITH</p><h2>Skills &amp; strengths</h2><p>A practical toolkit for shipping end-to-end AI and data products.</p></div>
+      <div className="skills-grid">{groups.map(([title, ...skills]) => <article className="skill-card" key={title}><h3>{title}</h3><div className="tag-list">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div></article>)}</div>
     </section>
   );
 }

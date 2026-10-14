@@ -1,59 +1,34 @@
+import { useState } from "react";
+
+const links = [
+  ["Experience", "experience"],
+  ["Projects", "projects"],
+  ["Skills", "skills"],
+  ["Education", "education"],
+  ["Contact", "contact"],
+];
+
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
-        {/* Logo / Name */}
-
-        <h1 className="text-lg font-bold text-indigo-400">
-          👋 Hello, I'm Gayathri!
-        </h1>
-
-        {/* Navigation Links */}
-
-        <div className="flex gap-6 text-gray-300 text-sm">
-
-          <a href="#projects" className="hover:text-indigo-400 transition">
-            Projects
-          </a>
-
-          <a href="#skills" className="hover:text-indigo-400 transition">
-            Skills
-          </a>
-
-          <a href="#experience" className="hover:text-indigo-400 transition">
-            Experience
-          </a>
-
-          <a href="#education" className="hover:text-indigo-400 transition">
-            Education
-          </a>
-
-          <a href="#architecture" className="hover:text-indigo-400 transition">
-            Architecture
-          </a>
-
-          <a href="#impact" className="hover:text-indigo-400 transition">
-            Impact
-          </a>
-
-          <a href="#contact" className="hover:text-indigo-400 transition">
-            Contact
-          </a>
-
-          <a
-            href="/gayathri_cv.pdf"
-            target="_blank"
-            className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition shadow-lg"
-            >
-            📄 Resume
-            </a>
-
+    <header className="site-header">
+      <nav className="nav-shell" aria-label="Main navigation">
+        <a className="brand" href="#home" onClick={() => setOpen(false)}>
+          <span className="brand-mark">G</span>
+          <span>Gayathri Devi<span className="brand-dot">.</span></span>
+        </a>
+        <button className="menu-toggle" type="button" aria-expanded={open} aria-controls="primary-links" onClick={() => setOpen(!open)}>
+          <span className="sr-only">{open ? "Close" : "Open"} navigation menu</span>
+          <span aria-hidden="true">{open ? "×" : "☰"}</span>
+        </button>
+        <div id="primary-links" className={`nav-links${open ? " is-open" : ""}`}>
+          {links.map(([label, target]) => (
+            <a key={target} href={`#${target}`} onClick={() => setOpen(false)}>{label}</a>
+          ))}
+          <a className="nav-resume" href="/Gayathridevi_resume.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
         </div>
-
-      </div>
-
-    </nav>
+      </nav>
+    </header>
   );
 }

@@ -1,70 +1,32 @@
 export default function Hero() {
   return (
-    <section className="py-24 px-6">
-
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-        {/* PROFILE IMAGE */}
-
-        <div className="flex justify-center">
-
-          <img
-            src="/Profile_1.jpg"
-            alt="Gayathri Devi"
-            className="w-56 h-56 object-cover rounded-full border-4 border-indigo-500 shadow-lg"
-          />
-
+    <section className="hero section-wrap" id="home">
+      <div className="hero-copy">
+        <p className="eyebrow"><span className="status-dot" /> SOFTWARE &amp; AI ENGINEER <span className="eyebrow-divider">/</span> BENGALURU, INDIA</p>
+        <h1>Building useful<br /><span>intelligence</span> into software.</h1>
+        <p className="hero-intro">I build backend systems and AI products that turn complex data into clear, actionable experiences.</p>
+        <div className="hero-actions">
+          <a className="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a className="button button-quiet" href="/Gayathridevi_resume.pdf" download="Gayathridevi_resume.pdf">Download resume <span aria-hidden="true">↗</span></a>
         </div>
-
-        {/* TEXT */}
-
-        <div className="text-center md:text-left">
-
-          <h1 className="text-5xl font-bold text-indigo-400">
-            Gayathri Devi B
-          </h1>
-
-
-          <p className="text-gray-400">
-            📍 Bangalore, India
-          </p>
-
-          <p className="text-xl text-gray-400 mt-4">
-            Python Backend Engineer | FastAPI | Django | AI Systems
-          </p>
-
-          <p className="mt-6 text-gray-400 max-w-lg">
-            Backend engineer experienced in scalable APIs, telecom analytics,
-            ETL pipelines and data-driven platforms.
-          </p>
-
-          <div className="flex gap-4 mt-8 justify-center md:justify-start">
-
-            <a
-              href="/gayathri_cv.pdf"
-              download
-              className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg"
-            >
-              Download Resume
-            </a>
-            
-            <a href="https://www.linkedin.com/in/gayathri-devi-b-260407220" className="border border-gray-500 px-6 py-3 rounded-lg hover:bg-gray-800">
-              LinkedIn
-            </a>
-
-            <a
-              href="https://github.com/Gayathridevi006"
-              className="border border-gray-500 px-6 py-3 rounded-lg hover:bg-gray-800"
-            >
-              GitHub
-            </a>
-
-          </div>
-
+        <div className="hero-socials">
+          <a href="https://www.linkedin.com/in/gayathri-devi-b-260407220" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/Gayathridevi006" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="mailto:ms.gayathridevi6@gmail.com">Email ↗</a>
         </div>
-
       </div>
-
+      <aside className="hero-card" aria-label="Professional summary">
+        <div className="hero-card-top"><span>NOW BUILDING</span><span className="card-orbit" aria-hidden="true">✳</span></div>
+        <div className="hero-card-visual" aria-hidden="true">
+          <div className="orbit orbit-one" /><div className="orbit orbit-two" />
+          <div className="orbit-core">AI<span>+</span></div>
+          <span className="orbit-node node-one">RAG</span><span className="orbit-node node-two">API</span><span className="orbit-node node-three">DATA</span>
+        </div>
+        <h2>Enterprise intelligence, made actionable.</h2>
+        <p>RAG · LLM applications · Full-stack systems</p>
+        <div className="hero-card-foot"><span>ALETHIC INSIGHTS</span><span>2026 — NOW</span></div>
+      </aside>
+      <div className="hero-bottom"><span>04+ YEARS BUILDING IN PRODUCTION</span><a href="#experience">Scroll to explore <span aria-hidden="true">↓</span></a></div>
     </section>
   );
 }

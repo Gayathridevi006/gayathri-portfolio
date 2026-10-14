@@ -1,61 +1,52 @@
+const roles = [
+  {
+    period: "Jul 2026 — Present", role: "Software & AI Engineer II", company: "Alethic Insights · via HealthMinds Technologies", location: "Bengaluru, India", current: true,
+    points: [
+      "Building a multi-tenant Enterprise Intelligence platform with RAG over Power BI and SharePoint data.",
+      "Developing ingestion, chunking, embeddings, and hybrid retrieval with PostgreSQL, pgvector, BM25, and OpenAI models.",
+      "Turning account and project signals into delivery health insights, with drill-downs from executive summaries to account details.",
+      "Designing in Figma and delivering full-stack features with React, FastAPI, and AWS CDK.",
+    ],
+  },
+  {
+    period: "Oct 2024 — Jul 2026", role: "Software Engineer", company: "OpenText · via Mastercom Technologies · Vodafone Idea", location: "Bengaluru, India",
+    points: [
+      "Owned production deployments of FastAPI microservices on AWS, configuring Nginx, SSL termination, rate limiting, and load balancing.",
+      "Led L3 telecom platform support and root-cause analysis; maintained SLAs and reduced MTTR with runbooks.",
+      "Managed CI/CD releases with review gates, staged rollouts, and rollback procedures for zero-downtime deployments.",
+      "Built an AI prediction service for telecom operations using LLMs and machine learning models.",
+    ],
+  },
+  {
+    period: "Dec 2022 — Oct 2024", role: "Associate Product Engineer → Software Engineering Intern", company: "Crediwatch", location: "Bengaluru, India",
+    points: [
+      "Architected Celery pipelines for financial early-warning signals, moving data from MySQL, MongoDB, and APIs through Pandas transformations.",
+      "Containerized services with Docker and Redis, then deployed them on AWS ECS for better isolation and horizontal scaling.",
+      "Built Django maker-checker approval workflows with multi-role authorization and Google OAuth 2.0.",
+      "Mentored three interns and collaborated with product and data science teams on APIs and signal definitions.",
+    ],
+  },
+  {
+    period: "Feb 2022 — Dec 2022", role: "Medical Technical Coordinator", company: "Maxlife Health Enterprises Pvt Ltd", location: "India",
+    points: ["Led field engineering coordination and supported medical software and hardware operations."],
+  },
+];
+
 export default function Experience() {
   return (
-    <section id="experience" className="py-20">
-
-    <h2 className="section-title">
-        Experience
-        <div className="w-24 h-1 bg-indigo-500 mx-auto mt-3"></div>
-        </h2>
-
-      <div className="max-w-5xl mx-auto space-y-8">
-
-        {/* Mastercom */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-
-          <h3 className="text-xl font-bold">
-            Software Engineer – Mastercom Technologies
-          </h3>
-
-          <p className="text-indigo-400 text-sm mt-1">
-            Oct 2024 – Present | Bangalore
-          </p>
-
-          <ul className="text-gray-400 mt-4 space-y-2 list-disc list-inside">
-            <li>Developed scalable backend APIs using FastAPI</li>
-            <li>Processed large telecom datasets using Hadoop</li>
-            <li>Optimized PostgreSQL queries and improved data reliability</li>
-            <li>Handled L3 production incidents and system monitoring</li>
-            <li>Implemented RBAC authentication for enterprise applications</li>
-          </ul>
-
-        </div>
-
-
-        {/* Crediwatch */}
-
-        <div className="bg-slate-800 p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-
-          <h3 className="text-xl font-bold">
-            Associate Product Engineer – Crediwatch
-          </h3>
-
-          <p className="text-indigo-400 text-sm mt-1">
-            Dec 2022 – Oct 2024 | Bangalore
-          </p>
-
-          <ul className="text-gray-400 mt-4 space-y-2 list-disc list-inside">
-            <li>Built asynchronous pipelines using Celery and Redis</li>
-            <li>Designed ETL systems for financial intelligence platforms</li>
-            <li>Integrated MySQL and MongoDB data ingestion pipelines</li>
-            <li>Deployed containerized services using Docker on AWS ECS</li>
-            <li>Mentored interns on backend development and data pipelines</li>
-          </ul>
-
-        </div>
-
+    <section id="experience" className="section-wrap section-block">
+      <div className="section-heading"><p className="eyebrow">THE PATH SO FAR</p><h2>Experience</h2><p>Building and operating reliable products across AI, telecom, and financial data.</p></div>
+      <div className="timeline">
+        {roles.map((item) => (
+          <article className="role-card" key={item.company + item.period}>
+            <div className="role-meta"><span className={item.current ? "role-current" : ""}>{item.period}</span><span>{item.location}</span></div>
+            <div className="role-main"><div className="role-title-row"><h3>{item.role}</h3>{item.current && <span className="current-pill">CURRENT</span>}</div>
+              <p className="role-company">{item.company}</p>
+              <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
+            </div>
+          </article>
+        ))}
       </div>
-
     </section>
   );
 }

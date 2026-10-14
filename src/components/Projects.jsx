@@ -1,168 +1,23 @@
+const projects = [
+  { no: "01", name: "LoanLens AI", type: "AI-ASSISTED LOAN PROCESSING", description: "A local loan-processing prototype that consolidates applicant documents and explains risk signals for human review.", bullets: ["Normalizes CSV, Excel, JSON, and PDF inputs across nine REST endpoints.", "Combines sentiment analysis with rule-based fraud and credit-risk scorecards.", "Designed a Phase 2 agentic RAG flow for cited policy retrieval and cross-document checks."], stack: ["Python", "FastAPI", "React", "TypeScript", "scikit-learn"] },
+  { no: "02", name: "AI Resume Builder for Veterans", type: "GENERATIVE AI · CAREER TOOLS", description: "A resume optimization tool that evaluates role fit and generates tailored, ATS-ready documents.", bullets: ["Scores resume relevance against job descriptions with TF-IDF and Logistic Regression.", "Uses T5 inference for skill translation and generates LaTeX resumes dynamically.", "Built a FastAPI backend for veteran profile ingestion and resume generation."], stack: ["Python", "FastAPI", "Hugging Face", "T5", "LaTeX"] },
+  { no: "03", name: "AI-Powered Content Delivery", type: "GOOGLE MLB HACKATHON", description: "A personalized sports content experience shaped by user interactions and AI-generated content.", bullets: ["Designed a real-time content delivery system using GCP and data-driven recommendations.", "Built REST APIs and integrated AI model outputs for dynamic sports updates."], stack: ["GCP", "JavaScript", "REST APIs", "AI"] },
+];
+
 export default function Projects() {
   return (
-    <section id="projects" className="py-20">
-
-      <h2 className="text-3xl font-bold text-center mb-12">
-        Projects
-      </h2>
-
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-
-        {/* TRACE Project */}
-
-        <div class="project-box">
-
-          <h3 className="text-xl font-semibold">
-            TRACE – Technical Warranty Recommender
-          </h3>
-
-          <p className="text-gray-400 mt-3">
-            AI system designed to analyze warranty claims and recommend 
-            approval or rejection decisions using machine learning and NLP.
-          </p>
-
-          <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
-            <li>Analyzed warranty claim descriptions using NLP</li>
-            <li>Integrated sensor and operational data for prediction</li>
-            <li>Built ML pipeline to automate recommendation decisions</li>
-          </ul>
-
-          <div className="flex gap-2 mt-4 text-sm">
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            Python
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            ML
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            NLP
-            </span>
-
-            </div>
-
+    <section id="projects" className="section-block projects-section">
+      <div className="section-wrap">
+        <div className="section-heading"><p className="eyebrow">SELECTED WORK</p><h2>Projects</h2><p>Practical applications of machine learning, retrieval, and thoughtful backend design.</p></div>
+        <div className="projects-grid">
+          {projects.map((project) => <article className="project-card" key={project.no}>
+            <div className="project-card-top"><span>{project.type}</span><span className="project-number">{project.no}</span></div>
+            <h3>{project.name}</h3><p className="project-description">{project.description}</p>
+            <ul>{project.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
+            <div className="tag-list">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
+          </article>)}
         </div>
-
-
-        {/* VetDeploy */}
-
-        <div className="project-box">
-
-        <h3 className="text-xl font-semibold">
-          AI Resume Builder
-        </h3>
-
-        <p className="text-gray-400 mt-3">
-          AI-powered system that generates ATS-optimized resumes by analyzing job descriptions.
-        </p>
-
-        <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
-          <li>Built ML model using TF-IDF and Logistic Regression</li>
-          <li>Developed backend APIs using FastAPI</li>
-          <li>Generated resumes dynamically using LaTeX</li>
-        </ul>
-
-        <div className="flex gap-2 mt-4 text-sm">
-          <span className="bg-indigo-600 px-2 py-1 rounded">Python</span>
-          <span className="bg-indigo-600 px-2 py-1 rounded">FastAPI</span>
-          <span className="bg-indigo-600 px-2 py-1 rounded">ML</span>
-          <span className="bg-indigo-600 px-2 py-1 rounded">NLP</span>
-        </div>
-
       </div>
-
-
-        {/* AI Sports Project */}
-
-        <div className="project-box">
-
-          <h3 className="text-xl font-semibold">
-            AI-Powered Personalized Sports Content
-          </h3>
-
-          <p className="text-gray-400 mt-3">
-            System developed during the Google MLB Hackathon to deliver 
-            personalized sports content using AI models.
-          </p>
-
-          <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
-            <li>Generated personalized sports updates using AI models</li>
-            <li>Integrated GCP tools and Imagen models</li>
-            <li>Connected frontend components with APIs</li>
-          </ul>
-
-          {/* <p className="text-indigo-400 mt-4 text-sm">
-            Tech: GCP, JavaScript APIs, AI Models
-          </p> */}
-              <div className="flex gap-2 mt-4 text-sm">
-          <span className="bg-indigo-600 px-2 py-1 rounded">
-            GCP
-          </span>
-
-          <span className="bg-indigo-600 px-1 py-1 rounded">
-            JavaScript
-          </span>
-
-          <span className="bg-indigo-600 px-1 py-1 rounded">
-            AI Models
-          </span>
-
-        <span className="bg-indigo-600 px-1 py-1 rounded">
-            APIS
-          </span>
-            </div>
-
-        </div>
-
-
-        {/* ETL Data Pipeline */}
-
-        <div className="project-box">
-          <h3 className="text-xl font-semibold">
-            Financial Early Warning ETL Pipeline
-          </h3>
-
-          <p className="text-gray-400 mt-3">
-            Data pipeline built to process financial signals for banks
-            and generate early warning alerts.
-          </p>
-
-          <ul className="text-gray-400 mt-4 list-disc list-inside space-y-1">
-            <li>Processed financial data from multiple APIs</li>
-            <li>Implemented asynchronous Celery task queues</li>
-            <li>Generated alerts using Pandas data analysis</li>
-          </ul>
-
-          {/* <p className="text-indigo-400 mt-4 text-sm">
-            Tech: Python, Celery, Redis, MongoDB, Pandas
-          </p> */}
-            <div className="flex gap-2 mt-4 text-sm">
-            <span className="bg-indigo-600 px-2 py-1 rounded">      
-            Python
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            Celery
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            Redis
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            MongoDB
-            </span>
-
-            <span className="bg-indigo-600 px-2 py-1 rounded">
-            Pandas
-            </span>
-            </div>
-        </div>
-
-      </div>
-
     </section>
   );
 }
