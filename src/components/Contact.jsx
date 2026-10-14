@@ -7,7 +7,7 @@ export default function Contact() {
           <a className="button button-light" href="mailto:ms.gayathridevi6@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
       </section>
-      <footer className="site-footer section-wrap"><a className="brand" href="#home"><span className="brand-mark">G</span><span>Gayathri Devi<span className="brand-dot">.</span></span></a><p>Designed &amp; built with care · Bengaluru, India</p><div className="footer-links"><a href="https://www.linkedin.com/in/gayathri-devi-b-260407220" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Gayathridevi006" target="_blank" rel="noreferrer">GitHub ↗</a></div><span className="copyright">© {new Date().getFullYear()}</span></footer>
+      <footer className="site-footer section-wrap"><a className="brand" href="#home"><img className="brand-avatar" src="/Profile_1.jpg" alt="" /><span>Gayathri Devi<span className="brand-dot">.</span></span></a><p>Designed &amp; built with care · Bengaluru, India</p><div className="footer-links"><a href="https://www.linkedin.com/in/gayathri-devi-b-260407220" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Gayathridevi006" target="_blank" rel="noreferrer">GitHub ↗</a></div><span className="copyright">© {new Date().getFullYear()}</span></footer>
     </>
   );
 }

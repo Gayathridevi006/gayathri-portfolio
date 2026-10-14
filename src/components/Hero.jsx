@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> SOFTWARE &amp; AI ENGINEER <span className="eyebrow-divider">/</span> BENGALURU, INDIA</p>
         <h1>Building useful<br /><span>intelligence</span> into software.</h1>
-        <p className="hero-intro">I build backend systems and AI products that turn complex data into clear, actionable experiences.</p>
+        <p className="hero-intro">I’m an AI and backend engineer who turns complex data into practical products, from RAG and LLM applications to reliable APIs. <strong>I’m a quick learner</strong> who adapts fast and enjoys taking ideas from prototype to production.</p>
         <div className="hero-actions">
           <a className="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
           <a className="button button-quiet" href="/Gayathridevi_resume.pdf" download="Gayathridevi_resume.pdf">Download resume <span aria-hidden="true">↗</span></a>
@@ -22,8 +22,8 @@ export default function Hero() {
           <div className="orbit-core">AI<span>+</span></div>
           <span className="orbit-node node-one">RAG</span><span className="orbit-node node-two">API</span><span className="orbit-node node-three">DATA</span>
         </div>
-        <h2>Enterprise intelligence, made actionable.</h2>
-        <p>RAG · LLM applications · Full-stack systems</p>
+        <h2>AI, backend &amp; data engineering</h2>
+        <p>RAG · LLM applications · Python · FastAPI · AWS</p>
         <div className="hero-card-foot"><span>ALETHIC INSIGHTS</span><span>2026 — NOW</span></div>
       </aside>
       <div className="hero-bottom"><span>04+ YEARS BUILDING IN PRODUCTION</span><a href="#experience">Scroll to explore <span aria-hidden="true">↓</span></a></div>

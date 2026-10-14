@@ -15,7 +15,7 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="nav-shell" aria-label="Main navigation">
         <a className="brand" href="#home" onClick={() => setOpen(false)}>
-          <span className="brand-mark">G</span>
+          <img className="brand-avatar" src="/Profile_1.jpg" alt="" />
           <span>Gayathri Devi<span className="brand-dot">.</span></span>
         </a>
         <button className="menu-toggle" type="button" aria-expanded={open} aria-controls="primary-links" onClick={() => setOpen(!open)}>

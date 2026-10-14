@@ -28,9 +28,10 @@ button{color:inherit}
 .hero .eyebrow{display:flex;align-items:center;gap:10px}.status-dot{width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 4px #9bd4b11c}.eyebrow-divider{color:#567165}
 h1,h2,h3,p{margin-top:0}
 h1,h2,h3{font-family:var(--heading)}
-.hero h1{font-size:clamp(45px,6.2vw,76px);line-height:1.07;letter-spacing:-.065em;margin:24px 0 22px;font-weight:700}
+.hero h1{font-size:clamp(42px,4.8vw,62px);line-height:1.08;letter-spacing:-.06em;margin:24px 0 22px;font-weight:700}
 .hero h1 span,.contact-inner h2 span{color:var(--accent)}
 .hero-intro{max-width:520px;font-size:17px;line-height:1.8;color:#aebbb9}
+.hero-intro strong{color:#e8edf0;font-weight:700}
 .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:13px 19px;border-radius:5px;font-size:13px;font-weight:700;transition:transform .2s ease,background .2s ease}.button:hover{transform:translateY(-2px)}
 .button-primary{background:var(--accent);color:#102019}.button-primary:hover{background:#b1e2c3}.button-quiet{border:1px solid #455250;color:#e0e7e4}.button-quiet:hover{border-color:var(--accent)}
@@ -56,5 +57,68 @@ h1,h2,h3{font-family:var(--heading)}
 .skip-link{position:fixed;top:8px;left:8px;z-index:100;padding:10px 14px;transform:translateY(-150%);background:var(--accent);color:#102019;border-radius:4px}.skip-link:focus{transform:translateY(0)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 @media(max-width:850px){.nav-links{gap:17px}.hero{gap:40px;grid-template-columns:1fr .8fr}.hero-card{min-height:400px}.role-card{grid-template-columns:165px 1fr;gap:22px}.section-block{padding-block:82px}}
-@media(max-width:680px){.section-wrap{width:min(100% - 36px,560px)}.site-header{height:66px}.nav-shell{width:calc(100% - 36px)}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:16px 20px 20px;background:#121b1d;border-bottom:1px solid var(--line);align-items:stretch;gap:0}.nav-links.is-open{display:flex;flex-direction:column}.nav-links a{padding:12px 6px;border-bottom:1px solid #ffffff0a}.nav-links .nav-resume{align-self:flex-start;margin-top:12px;padding:8px 14px;border:1px solid #51655d}.hero{grid-template-columns:1fr;gap:36px;padding-top:64px;padding-bottom:40px;min-height:0}.hero h1{font-size:clamp(43px,12vw,64px)}.hero-intro{font-size:15px}.hero-card{min-height:370px}.hero-card-visual{height:200px}.hero-bottom{margin-top:10px}.section-block{padding-block:72px}.section-heading{margin-bottom:30px}.role-card{grid-template-columns:1fr;gap:12px;padding:25px 0}.role-meta{flex-direction:row;justify-content:space-between}.role-title-row{align-items:flex-start;flex-direction:column;gap:7px}.role-title-row h3{font-size:18px}.projects-grid,.skills-grid,.education-grid{grid-template-columns:1fr}.project-description{min-height:0}.contact-section{padding:65px 0}.contact-inner{align-items:flex-start;flex-direction:column}.site-footer{padding-block:22px;flex-wrap:wrap}.site-footer p{order:3;width:100%}}
+@media(max-width:680px){.section-wrap{width:min(100% - 36px,560px)}.site-header{height:66px}.nav-shell{width:calc(100% - 36px)}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:16px 20px 20px;background:#121b1d;border-bottom:1px solid var(--line);align-items:stretch;gap:0}.nav-links.is-open{display:flex;flex-direction:column}.nav-links a{padding:12px 6px;border-bottom:1px solid #ffffff0a}.nav-links .nav-resume{align-self:flex-start;margin-top:12px;padding:8px 14px;border:1px solid #51655d}.hero{grid-template-columns:1fr;gap:36px;padding-top:64px;padding-bottom:40px;min-height:0}.hero h1{font-size:clamp(38px,10vw,52px)}.hero-intro{font-size:15px}.hero-card{min-height:370px}.hero-card-visual{height:200px}.hero-bottom{margin-top:10px}.section-block{padding-block:72px}.section-heading{margin-bottom:30px}.role-card{grid-template-columns:1fr;gap:12px;padding:25px 0}.role-meta{flex-direction:row;justify-content:space-between}.role-title-row{align-items:flex-start;flex-direction:column;gap:7px}.role-title-row h3{font-size:18px}.projects-grid,.skills-grid,.education-grid{grid-template-columns:1fr}.project-description{min-height:0}.contact-section{padding:65px 0}.contact-inner{align-items:flex-start;flex-direction:column}.site-footer{padding-block:22px;flex-wrap:wrap}.site-footer p{order:3;width:100%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Premium visual pass */
+:root{--accent:#a8e6bd;--line:#2a3b38}
+body{background:radial-gradient(ellipse at 78% 0%,#29483d 0,transparent 34%),radial-gradient(ellipse at 0% 55%,#142322 0,transparent 30%),var(--bg)}
+.site-header{background:rgba(13,20,21,.78);border-bottom-color:#c5e9d20d}
+.brand{font-size:14px;letter-spacing:-.04em}.brand-mark{width:35px;height:35px;background:linear-gradient(145deg,#213a30,#121e1c);border-color:#86b89a66;box-shadow:inset 0 0 0 3px #a8e6bd0b}
+.nav-links{gap:32px;font-size:12px}.nav-links a{transition:color .2s ease}.nav-links .nav-resume{padding:9px 17px;border-color:#a8e6bd55;background:#a8e6bd0a}
+.hero{min-height:690px;gap:64px;padding-top:84px;padding-bottom:66px}
+.hero-copy{max-width:630px}.hero .eyebrow{font-size:9px;letter-spacing:.2em}
+.hero h1{max-width:650px;font-size:clamp(40px,4.3vw,58px);line-height:1.12;letter-spacing:-.065em;margin:25px 0 20px}
+.hero h1 span{color:var(--accent);text-shadow:0 0 36px #a8e6bd22}
+.hero-intro{max-width:550px;font-size:16px;line-height:1.85;color:#b2c1bb}.hero-intro strong{color:#f0f6f2}
+.hero-actions{margin-top:29px}.button{min-height:48px;border-radius:4px;letter-spacing:.01em}.button-primary{box-shadow:0 8px 28px #a8e6bd1b}.button-quiet{border-color:#52635d;background:#ffffff04}
+.hero-socials{gap:23px;margin-top:30px;font-size:11px}.hero-card{min-height:430px;padding:27px;border-color:#55726766;background:linear-gradient(145deg,#1d302c 0%,#172321 56%,#11191b 100%);box-shadow:0 32px 90px #050a0a66,inset 0 1px 0 #ffffff0b}
+.hero-card-visual{height:225px}.orbit-one{width:188px;height:188px}.orbit-two{width:275px;height:108px}.orbit-core{width:82px;height:82px;background:radial-gradient(circle at 35% 25%,#345c48,#1b3329);border-color:#a8e6bd88;box-shadow:0 0 56px #a8e6bd27}
+.hero-card h2{font-size:20px;letter-spacing:-.045em}.hero-card>p{font-size:11px;letter-spacing:.02em}.hero-card-foot{font-size:8px}
+.hero-bottom{border-color:#a8e6bd20;padding-top:18px}.hero-bottom>span{color:#9caaa5}
+.section-block{padding-block:100px}.section-heading{max-width:670px;margin-bottom:40px}.section-heading .eyebrow{font-size:9px;letter-spacing:.2em}.section-heading h2{font-size:clamp(34px,3.5vw,46px);letter-spacing:-.065em}.section-heading>p:last-child{font-size:14px;line-height:1.8}
+.projects-section{background:linear-gradient(180deg,#131d1e,#11191b);border-color:#ffffff0b}
+.project-card{position:relative;overflow:hidden;padding:27px;border-color:#334341;background:linear-gradient(145deg,#192524,#141d1f 75%);box-shadow:inset 0 1px 0 #ffffff08}.project-card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:1px;background:linear-gradient(90deg,#a8e6bd66,transparent 70%);opacity:.55}.project-card:hover{border-color:#759a84;box-shadow:0 18px 45px #05090955;transform:translateY(-5px)}.project-card-top{font-size:8px;letter-spacing:.15em}.project-card h3{font-size:22px;letter-spacing:-.05em}.project-description{font-size:13px;line-height:1.8}.project-card li{font-size:12px;line-height:1.75}.tag-list{gap:6px}.tag-list span{border-color:#3d504a;background:#a8e6bd08;color:#c0cec7;font-size:9px;padding:5px 8px}
+.role-card{padding:35px 0;grid-template-columns:205px 1fr}.timeline{border-color:#34413f}.role-card{border-color:#34413f}.role-meta{font-size:10px}.role-title-row h3{font-size:19px}.role-company{font-size:12px}.role-main li{font-size:12px;line-height:1.8}.current-pill{background:#a8e6bd0a}
+.skills-grid{gap:12px}.skill-card{padding:22px;border-radius:4px;background:linear-gradient(145deg,#192423,#141d1f);border-color:#344340;box-shadow:inset 0 1px 0 #ffffff07;transition:transform .2s ease,border-color .2s ease}.skill-card:hover{transform:translateY(-3px);border-color:#668875}.skill-card h3{font-size:13px;letter-spacing:.01em}.skill-card .tag-list span{background:#ffffff03}
+.education-card{background:linear-gradient(90deg,#1a2925,#151e20);border-left-color:var(--accent)}.contact-section{background:linear-gradient(120deg,#b7e4c7,#a9d7b9);position:relative;overflow:hidden}.contact-section:after{content:"";position:absolute;width:400px;height:400px;right:-80px;top:-190px;border:1px solid #315c4433;border-radius:50%;box-shadow:0 0 0 35px #315c4408,0 0 0 70px #315c4405;pointer-events:none}.contact-inner{position:relative;z-index:1}.contact-inner h2{letter-spacing:-.07em}.button-light{box-shadow:0 8px 25px #12251c20}.site-footer{border-top:1px solid #ffffff08}
+@media(max-width:850px){.hero{gap:36px;grid-template-columns:1.08fr .92fr}.hero h1{font-size:clamp(40px,5vw,54px)}.section-block{padding-block:82px}}
+@media(max-width:680px){.hero{gap:32px;padding-top:55px}.hero h1{font-size:clamp(38px,10vw,50px)}.hero-intro{font-size:15px;line-height:1.75}.hero-card{min-height:390px}.section-block{padding-block:70px}.section-heading{margin-bottom:30px}.project-card{padding:22px}.hero-bottom{font-size:8px;letter-spacing:.1em}.contact-section:after{right:-240px}}
+
+/* Larger reading sizes and subtle motion */
+body{font-size:17px}
+.nav-links{font-size:14px}
+.hero .eyebrow,.section-heading .eyebrow{font-size:10px}
+.hero-intro{font-size:18px}
+.hero-socials{font-size:13px}
+.button{font-size:14px}
+.hero-card-top,.hero-card-foot{font-size:10px}
+.hero-card>p{font-size:13px}
+.hero-bottom{font-size:10px}.hero-bottom a{font-size:12px}
+.section-heading>p:last-child{font-size:16px}
+.role-meta{font-size:12px}.role-company{font-size:14px}.role-main li,.project-card li{font-size:14px}
+.project-card-top{font-size:9px}.project-description{font-size:15px}.tag-list span{font-size:11px}
+.skill-card h3{font-size:15px}.education-period{font-size:13px}.education-card p{font-size:15px}.education-detail{font-size:13px}
+.contact-intro{font-size:16px}.site-footer{font-size:13px}
+.hero-copy{animation:hero-rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-card{animation:hero-rise .9s .12s cubic-bezier(.2,.7,.2,1) both}
+.orbit-one{animation:orbit-drift 18s ease-in-out infinite alternate}
+.orbit-two{animation:orbit-drift 22s ease-in-out infinite alternate-reverse}
+.orbit-core{animation:core-glow 4s ease-in-out infinite}
+.hero-card .orbit-node{transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.hero-card:hover .node-one{transform:translate(-3px,-4px)}.hero-card:hover .node-two{transform:translate(4px,-2px)}.hero-card:hover .node-three{transform:translate(-2px,4px)}
+.nav-links a:not(.nav-resume){position:relative}
+.nav-links a:not(.nav-resume):after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:var(--accent);transition:right .22s ease}
+.nav-links a:not(.nav-resume):hover:after{right:0}
+.brand-avatar{width:36px;height:36px;flex:none;border:1px solid #a8e6bd66;border-radius:50%;object-fit:cover;object-position:center 34%;box-shadow:0 0 0 3px #a8e6bd0d}
+.tag-list span{transition:color .2s ease,border-color .2s ease,background .2s ease}
+.tag-list span:hover{color:#eaf6ee;border-color:#a8e6bd77;background:#a8e6bd12}
+@keyframes hero-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbit-drift{from{transform:rotate(-28deg) translateY(-4px)}to{transform:rotate(-20deg) translateY(5px)}}
+@keyframes core-glow{0%,100%{box-shadow:0 0 42px #a8e6bd18}50%{box-shadow:0 0 62px #a8e6bd38}}
+@supports(animation-timeline:view()){
+  .section-heading,.role-card,.project-card,.skill-card,.education-card{animation:section-reveal linear both;animation-timeline:view();animation-range:entry 0% entry 24%}
+}
+@keyframes section-reveal{from{opacity:.25;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:680px){body{font-size:16px}.hero-intro{font-size:16px}.hero-bottom{font-size:9px}.project-description{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
